@@ -283,6 +283,13 @@ Continguts del header i menú de navegació principal
   line-height: 70px;
   font-size: 1.5rem;
 }
+
+.brand div {
+  line-height: 1.4rem;
+  padding: 1rem;
+  display: inline-flex;
+}
+
 .brand a {
   color: var(--dark-color);  
 }
@@ -332,6 +339,11 @@ nav.nav a.active:hover {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+  }
+
+  .brand div {
+    line-height: 1.5rem;
+    display: inline-block;
   }
 }
 
