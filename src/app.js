@@ -1,5 +1,5 @@
  
- function fntExecuteSlide(side){
+ function fntExecuteSlider(side){
      const parentTarget = document.getElementById('slider');
      let elements = parentTarget.getElementsByTagName('li');
      let curElement, nextElement;
@@ -34,8 +34,8 @@
      elements[nextElement].style.zIndex =1;
  }
  
-async function runSlider() {
-    setInterval(fntExecuteSlide('next'), 5000);
+ async function runSlider() {
+    setInterval(fntExecuteSlider, 5000, "next");
 }
 
  //------------------------------ LIST SLIDER -------------------------
@@ -56,7 +56,7 @@ async function runSlider() {
     let next = document.getElementById('next');
     next.addEventListener('click', function(e) {
         e.preventDefault();
-        fntExecuteSlide('next');
+        fntExecuteSlider('next');
         return false;
     });
  }
@@ -65,11 +65,12 @@ async function runSlider() {
     let next = document.getElementById('prev');
     next.addEventListener('click', function(e) {
         e.preventDefault();
-        fntExecuteSlide('prev');
+        fntExecuteSlider('prev');
         return false;
     });
  }
 
- if (document.getElementById('container-slider')){
+ if (document.querySelector('#container-slider')){
     runSlider();
  }
+  
