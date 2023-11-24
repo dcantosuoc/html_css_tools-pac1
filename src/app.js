@@ -36,7 +36,7 @@
  
  async function runSlider() {
     setInterval(fntExecuteSlider, 5000, "next");
-}
+ }
 
  //------------------------------ LIST SLIDER -------------------------
  if (document.querySelector('.listslider')) {
@@ -46,7 +46,7 @@
           e.preventDefault();
           let item = this.getAttribute('itlist');
           let arrItem = item.split('_');
-          fntExecuteSlide(arrItem[1]);
+          fntExecuteSlider(arrItem[1]);
           return false;
        });
      });
