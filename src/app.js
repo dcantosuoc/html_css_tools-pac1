@@ -6,7 +6,7 @@
  
      for (var i=0; i<elements.length;i++) {
  
-         if(elements[i].style.opacity==1){
+         if(elements[i].classList.contains("slider_activa") == true){
              curElement = i;
              break;
          }
@@ -28,10 +28,16 @@
      let elementSel = document.getElementsByClassName('listslider')[0].getElementsByTagName('a');
      elementSel[curElement].classList.remove('item-select-slid');
      elementSel[nextElement].classList.add('item-select-slid');
+     elements[curElement].classList.remove("slider_activa");
+     elements[curElement].classList.add('slider_inactiva');
+     elements[nextElement].classList.add("slider_activa");
+     elements[nextElement].classList.remove("slider_inactiva");
+     /*
      elements[curElement].style.opacity=0;
      elements[curElement].style.zIndex =0;
      elements[nextElement].style.opacity=1;
      elements[nextElement].style.zIndex =1;
+     */
  }
  
  async function runSlider() {

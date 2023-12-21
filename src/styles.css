@@ -48,8 +48,9 @@ h3 {
 *****************************************/
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+  text-align: center;
 }
 .video-fluid {
   position: relative;
@@ -108,11 +109,11 @@ section * {
   width: 100%;
   height: 100%;
   display: block;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -ms-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: cubic-bezier(1, 0, 0, 1) 2s;
+  -moz-transition: cubic-bezier(1, 0, 0, 1) 2s;
+  -ms-transition: cubic-bezier(1, 0, 0, 1) 2s;
+  -o-transition: cubic-bezier(1, 0, 0, 1) 2s;
+  transition:cubic-bezier(1, 0, 0, 1) 2s;
   z-index: -1;
   opacity: 0;
 }
@@ -152,6 +153,8 @@ section * {
   margin-bottom: 20px;
   max-width: 1024px;
 }
+
+
 #slider li .content_slider{
   background: rgba(0, 0, 0, 0.50);
   padding: 10px 125px;
@@ -214,7 +217,34 @@ section * {
   background: #FFF  !important;
 }
 
-@media screen and (max-width: 460px){
+.slider_activa {
+  opacity: 1 !important;
+  z-index: 1;
+}
+
+.slider_inactiva {
+  opacity: 0 !important;
+  z-index: 0;
+}
+
+#slider li.slider1 {
+  background-image: url('../img/casa_papel_01.png');
+}
+
+#slider li.slider2 {
+  background-image: url('../img/casa_papel_02.png');
+}
+
+#slider li.slider3 {
+  background-image: url('../img/casa_papel_03.png');
+}
+
+#slider li.slider4 {
+  background-image: url('../img/casa_papel_04.jpg');
+}
+
+
+@media screen and (max-width: 548px){
 
   .content_slider h2 {
       font-size: 15pt !important;
@@ -247,6 +277,23 @@ section * {
   #slider{
     height: 400px;
     min-height: 400px;
+  }
+
+
+  #slider li.slider1 {
+    background-image: url('../img/casa_papel_01_h400.png');
+  }
+  
+  #slider li.slider2 {
+    background-image: url('../img/casa_papel_02_h400.png');
+  }
+  
+  #slider li.slider3 {
+    background-image: url('../img/casa_papel_03_h400.png');
+  }
+  
+  #slider li.slider4 {
+    background-image: url('../img/casa_papel_04_h400.png');
   }
 
   #slider li .content_slider{
@@ -494,6 +541,11 @@ nav.menu-interior ul li {
   margin-top: -0.5rem;
   margin-bottom: 0.5rem;
 }
+
+.card img {
+  clip-path: circle(50%) ;
+}
+
 @media (min-width: 768px) {
   .card {
       display: grid;
@@ -551,11 +603,13 @@ article figure {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 article figure figcaption p {
   font-size: 0.75rem;
 }
+
 
 @media (min-width: 992px) {
   article blockquote {
@@ -673,4 +727,17 @@ dd a {
   }
 }
 
+/************************************************************
+  Animacions
+*************************************************************/
 
+#svg_cercle {
+  animation: cercle 2s infinite ease-in-out;
+}
+
+@keyframes cercle {
+  0%{transform:rotate(0deg);}
+  20%{transform:rotate(120deg);}
+  80%{transform:rotate(240deg);}
+  100%{transform:rotate(360deg);}
+  }

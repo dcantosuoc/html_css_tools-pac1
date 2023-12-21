@@ -11,8 +11,25 @@
   <body>
     <main>
     <section id="container-slider">	
-      <a id="prev" href="#" class="arrowPrev"><img src="../img/left.png"></a>
-      <a id="next" href="#" class="arrowNext"><img src="../img/right.png"></a>
+      <a id="prev" href="#" class="arrowPrev">
+        <picture>
+          <source srcset="../img/left.png?as=avif" type="image/avif" media="(min-width: 548px)"/>
+          <source srcset="../img/left.png?as=avif&width=30px" type="image/avif" media="(max-width: 547px)"/>
+          <source srcset="../img/left.png?as=webp" type="image/webp" media="(min-width: 548px)"/>
+          <source srcset="../img/left.png?as=webp&witdth=30px" type="image/webp" media="(max-width: 547px)"/>
+          <img src="../img/left.png" alt="Izquierda">
+     </picture>
+      </a>
+      <a id="next" href="#" class="arrowNext">
+        <picture>
+          <source srcset="../img/right.png?as=avif" type="image/avif" media="(min-width: 548px)"/>
+          <source srcset="../img/right.png?as=avif&width=30px" type="image/avif" media="(max-width: 547px)"/>
+          <source srcset="../img/right.png?as=webp" type="image/webp" media="(min-width: 548px)"/>
+          <source srcset="../img/right.png?as=webp&witdth=30px" type="image/webp" media="(max-width: 547px)"/>
+          <img src="../img/right.png" alt="Derecha">
+     </picture>
+        
+      </a>
       <ul class="listslider">
         <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
         <li><a itlist="itList_1" href="#"></a></li>
@@ -20,7 +37,7 @@
         <li><a itlist="itList_3" href="#"></a></li>
       </ul>
       <ul id="slider">
-        <li style="background-image: url('../img/casa_papel_01.jpg'); z-index:0; opacity: 1;">
+        <li class="slider1 slider_activa">
           <div class="content_slider" >
             <div>
               <h2>Diario El Periódico</h2>
@@ -29,7 +46,7 @@
       </div>
           </div>
         </li>
-        <li style="background-image: url('../img/casa_papel_02.jpg'); ">
+        <li class="slider2 slider_inactiva">
           <div class="content_slider" >
             <div>
               <h2>Diario El Mundo</h2>
@@ -38,7 +55,7 @@
       </div>
           </div>
         </li>
-        <li style="background-image: url('../img/casa_papel_03.jpg'); ">
+        <li class="slider3 slider_inactiva">
           <div class="content_slider" >
             <div>
               <h2>Diario The Guardian</h2>
@@ -47,7 +64,7 @@
       </div>
           </div>
         </li>
-        <li style="background-image: url('../img/casa_papel_04.jpg'); ">
+        <li class="slider4 slider_inactiva">
           <div class="content_slider" >
             <div>
               <h2>Diario La Vanguardia</h2>
