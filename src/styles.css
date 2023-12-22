@@ -228,15 +228,15 @@ section * {
 }
 
 #slider li.slider1 {
-  background-image: url('../img/casa_papel_01.png');
+  background-image: url('../img/casa_papel_01.jpg');
 }
 
 #slider li.slider2 {
-  background-image: url('../img/casa_papel_02.png');
+  background-image: url('../img/casa_papel_02.jpg');
 }
 
 #slider li.slider3 {
-  background-image: url('../img/casa_papel_03.png');
+  background-image: url('../img/casa_papel_03.jpg');
 }
 
 #slider li.slider4 {
@@ -281,19 +281,19 @@ section * {
 
 
   #slider li.slider1 {
-    background-image: url('../img/casa_papel_01_h400.png');
+    background-image: url('../img/casa_papel_01.jpg?height=400px');
   }
   
   #slider li.slider2 {
-    background-image: url('../img/casa_papel_02_h400.png');
+    background-image: url('../img/casa_papel_02.jpg?height=400px');
   }
   
   #slider li.slider3 {
-    background-image: url('../img/casa_papel_03_h400.png');
+    background-image: url('../img/casa_papel_03.jpg?height=400px');
   }
   
   #slider li.slider4 {
-    background-image: url('../img/casa_papel_04_h400.png');
+    background-image: url('../img/casa_papel_04.jpg?height=400px');
   }
 
   #slider li .content_slider{
@@ -742,6 +742,25 @@ dd a {
   20%{transform:rotate(120deg);}
   80%{transform:rotate(240deg);}
   100%{transform:rotate(360deg);}
+  }
+
+  #svg_blink_text {
+    animation: blink_text 1s infinite ease-in-out;
+  }
+
+  @keyframes blink_text {
+    from {
+      opacity: 5%;
+      font-size: 14;
+      font-weight: 100;
+    }
+  
+    to {
+      opacity: 100%;
+      font-size: 20;
+      font-weight: bold;
+    }
+    
   }
 
 /************************************************************

@@ -33,10 +33,10 @@
                     <source srcset="../img/casa_papel_01.jpg?as=webp&width=664px" type="image/webp" media="(min-width: 750px)"/>
                     <source srcset="../img/casa_papel_01.jpg?as=webp&witdth=590px" type="image/webp" media="(min-width: 547px)"/>
                     <source srcset="../img/casa_papel_01.jpg?as=webp&witdth=460px" type="image/webp" media="(max-width: 546px)"/>
-                    <source srcset="../img/casa_papel_01.jpg?as=png&width=664px" type="image/png" media="(min-width: 750px)"/>
-                    <source srcset="../img/casa_papel_01.jpg?as=png&width=400px" type="image/png" media="(min-width: 547px)"/>
-                    <source srcset="../img/casa_papel_01.jpg?as=png&width=300px" type="image/png" media="(max-width: 546px)"/>
-                    <img src="../img/casa_papel_01.jpg?as=png&width=664px" title="La Case de Papel, principales personajes" class="img-fluid"></img>
+                    <source srcset="../img/casa_papel_01.jpg?width=664px" type="image/png" media="(min-width: 750px)"/>
+                    <source srcset="../img/casa_papel_01.jpg?width=400px" type="image/png" media="(min-width: 547px)"/>
+                    <source srcset="../img/casa_papel_01.jpg?width=300px" type="image/png" media="(max-width: 546px)"/>
+                    <img src="../img/casa_papel_01.jpg?width=664px" title="La Case de Papel, principales personajes" class="img-fluid"></img>
                 </picture>
                 
             </div>
@@ -129,16 +129,7 @@
                 <stop offset="100%" stop-color="#01E400"></stop>
             </linearGradient>
             
-            <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="20">Cargando
-                <animateTransform attributeName="transform"
-                    type="translate"
-                    from="-100 0"
-                    to="100 0"
-                    begin="0s"
-                    dur="2s"
-                    repeatCount="indefinite"
-                />
-            </text>
+            <text id="svg_blink_text" x="100" y="100" text-anchor="middle" font-family="Arial" font-size="20">Cargando</text>
             
             
             <circle  r="85" cx="100" cy="100" class="external-circle" stroke-width="4" fill="none" stroke="url(#linearColors)">
