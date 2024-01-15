@@ -8,7 +8,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.png" />
     <title>La Casa de Papel - la Serie</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+    <script defer src="../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
 
   </head>
   <include src="./src/header.html"></include>
@@ -146,9 +150,7 @@
 </figure>
 <h2>Trailers</h2>
 <figure>
-    <div class="video-fluid">
-        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/3y-6iaveY6c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-fluid-item"></iframe>
-    </div>
+    <lite-youtube videoid="3y-6iaveY6c" playlabel="Youtube video player"></lite-youtube>
     <figcaption>
         <p>Trailer oficial de la serie de Netflix</p>
     </figcaption>

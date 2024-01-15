@@ -40,19 +40,19 @@
 
 
   #slider li.slider1 {
-    background-image: url('../img/casa_papel_01.jpg?height=400px');
+    background-image: url('../img/casa_papel_01.jpg?as=webp&height=400px');
   }
   
   #slider li.slider2 {
-    background-image: url('../img/casa_papel_02.jpg?height=400px');
+    background-image: url('../img/casa_papel_02.jpg?as=webp&height=400px');
   }
   
   #slider li.slider3 {
-    background-image: url('../img/casa_papel_03.jpg?height=400px');
+    background-image: url('../img/casa_papel_03.jpg?as=webp&height=400px');
   }
   
   #slider li.slider4 {
-    background-image: url('../img/casa_papel_04.jpg?height=400px');
+    background-image: url('../img/casa_papel_04.jpg?as=webp&height=400px');
   }
 
   #slider li .content_slider{
