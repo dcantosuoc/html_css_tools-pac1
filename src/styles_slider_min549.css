@@ -1,0 +1,27 @@
+
+/**********************************************************
+ Slider d'imatges
+**********************************************************/
+
+
+@media screen and (min-width: 549px) {
+
+  #slider li.slider1 {
+    background-image: url('../img/casa_papel_01.jpg');
+  }
+
+  #slider li.slider2 {
+    background-image: url('../img/casa_papel_02.jpg');
+  }
+
+  #slider li.slider3 {
+    background-image: url('../img/casa_papel_03.jpg');
+  }
+
+  #slider li.slider4 {
+    background-image: url('../img/casa_papel_04.jpg');
+  }
+
+}
+
+
